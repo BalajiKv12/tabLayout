@@ -18,8 +18,4 @@ class FragmentAdapter(fragmentManager: FragmentManager, lifecycle: Lifecycle, pr
         return fragments.get(position)
     }
 
-    fun deleteFragment(positiom: Int){
-        //deleting the fragment
-        fragments.removeAt(positiom)
-    }
 }

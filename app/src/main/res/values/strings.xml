@@ -2,4 +2,14 @@
     <string name="app_name">TabLayout</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="one">Artificial Intelligence is the science and engineering of making intelligent machines, especially intelligent computer programs.
+        It is concerned with getting computers to do tasks that would normally require human intelligence.
+        AI systems are basically software systems (or controllers for robots) that use techniques such as machine learning and deep learning to solve problems in particular domains without hard coding all possibilities (i.e. algorithmic steps) in software.
+        Due to this, AI started showing promising solutions for industry and businesses as well as our daily lives.</string>
+    <string name="two">The Android operating system is most frequently used on different mobile platforms around the world.
+        It is occupied approximately 75% of shares in the worldwide market by the end of 2020.
+        A company like Open Handset Alliance has developed the first Android that depends on the customized version of the Linux kernel as well as other open-source software.
+        At the initial stage of 2005, Google sponsored the project it obtained the entire company.
+        In September 2008, the first Android device was released in the market to dominate the mobile industries due to several features like user friendly, the support of the community is huge, customization, manufacturing of android devices in large companies.
+        Consequently, the market examines the demand to develop Android-supported devices with smart developers.</string>
 </resources>

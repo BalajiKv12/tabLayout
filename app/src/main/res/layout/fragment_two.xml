@@ -9,7 +9,10 @@
         android:id="@+id/TextTwo"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:textSize="18sp"
         android:gravity="center"
-        android:text="Two" />
+        android:text="@string/two" />
 
 </FrameLayout>
