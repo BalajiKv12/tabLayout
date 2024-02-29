@@ -50,8 +50,19 @@ class MainActivity : AppCompatActivity() {
         tabLayout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
             override fun onTabSelected(tab: TabLayout.Tab?) {
                 //displaying the current tab details
-                if(tab!=null)
+                if(tab!=null){
                     viewPage.currentItem=tab.position
+
+
+                    floatDeleteButton.setOnClickListener {
+                        //deleting selected tab
+                        adapter.deleteFragment(tab.position)
+                        tabLayout.removeTabAt(tab.position)
+                        //notifying adapter
+                        adapter.notifyItemRemoved(tab.position)
+                        Toast.makeText(applicationContext, "Tab Deleted", Toast.LENGTH_SHORT).show()
+                    }
+                }
             }
             override fun onTabUnselected(tab: TabLayout.Tab?) {}
             override fun onTabReselected(tab: TabLayout.Tab?) {}
@@ -79,13 +90,6 @@ class MainActivity : AppCompatActivity() {
             adapter.notifyItemInserted(fragmentList1.size-1)
         }
 
-        floatDeleteButton.setOnClickListener{
-            //deleting last tab
-            adapter.deleteFragment(fragmentList1.size-1)
-            tabLayout.removeTabAt(fragmentList1.size)
-            //notifying adapter
-            adapter.notifyItemRemoved(fragmentList1.size-1)
-            Toast.makeText(applicationContext,"Tab Deleted",Toast.LENGTH_SHORT).show()
-        }
+
     }
 }
